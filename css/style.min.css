@@ -4177,7 +4177,31 @@ body {
   padding-bottom: 500px;
   background-image: url(../img/hero/backgraund.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+@media screen and (max-width: 1440px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 275px;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (max-width: 1440px) and (max-width: 425px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 130px;
+  }
 }
 .hero__container {
   max-width: 1105px;
@@ -4207,6 +4231,36 @@ body {
   font-size: 250px;
   line-height: 334px;
 }
+@media screen and (max-width: 1100px) {
+  .hero__caption {
+    font-size: 200px;
+    line-height: 275px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero__caption {
+    font-size: 160px;
+    line-height: 245px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__caption {
+    font-size: 130px;
+    line-height: 215px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .hero__caption {
+    font-size: 100px;
+    line-height: 180px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero__caption {
+    font-size: 70px;
+    line-height: 150px;
+  }
+}
 .hero__subtitle {
   font-family: "RobotoCondensed-LightItalic", sans-serif;
   font-weight: 300;
@@ -4215,5 +4269,30 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+@media screen and (max-width: 1100px) {
+  .hero__subtitle {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero__subtitle {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__subtitle {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .hero__subtitle {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero__subtitle {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */
