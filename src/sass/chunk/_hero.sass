@@ -3,7 +3,19 @@
   padding-bottom: 500px
   background-image: url(../img/hero/backgraund.jpg)
   background-repeat: no-repeat
-  background-size: contain
+  background-size: cover
+  @media screen and ( max-width: 1440px )
+    padding-top: 200px
+    padding-bottom: 275px
+    @media screen and ( max-width: 1024px )
+      padding-top: 150px
+      padding-bottom: 250px
+    @media screen and ( max-width: 768px )
+      padding-top: 100px
+      padding-bottom: 200px
+    @media screen and ( max-width: 425px )
+      padding-top: 40px
+      padding-bottom: 130px
 
   &__container
     max-width: 1105px
@@ -23,6 +35,21 @@
     font-weight: 400
     font-size: 250px
     line-height: 334px
+    @media screen and ( max-width: 1100px )
+      font-size: 200px
+      line-height: 275px
+    @media screen and ( max-width: 900px )
+      font-size: 160px
+      line-height: 245px
+    @media screen and ( max-width: 768px )
+      font-size: 130px
+      line-height: 215px
+    @media screen and ( max-width: 590px )
+      font-size: 100px
+      line-height: 180px
+    @media screen and ( max-width: 425px )
+      font-size: 70px
+      line-height: 150px
 
   &__subtitle
     font-family: 'RobotoCondensed-LightItalic', sans-serif
@@ -32,3 +59,13 @@
     position: absolute
     right: 0
     bottom: 0
+    @media screen and ( max-width: 1100px )
+      font-size: 44px
+    @media screen and ( max-width: 900px )
+      font-size: 35px
+    @media screen and ( max-width: 768px )
+      font-size: 29px
+    @media screen and ( max-width: 590px )
+      font-size: 22px
+    @media screen and ( max-width: 425px )
+      font-size: 15px
