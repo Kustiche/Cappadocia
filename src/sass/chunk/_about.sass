@@ -1,49 +1,181 @@
 .about
   padding-top: 200px
   padding-bottom: 100px
+  @media screen and ( max-width: 1590px )
+    padding-top: 100px
+    @media screen and ( max-width: 930px )
+      padding-top: 50px
+      padding-bottom: 50px
+    @media screen and ( max-width: 425px )
+      padding-top: 25px
+      padding-bottom: 25px
 
   &__container
     margin-left: 0
 
   &__wrap
+    @media screen and ( max-width: 1590px )
+      display: flex
+      flex-direction: column
+      align-items: center
 
   &__title
     max-width: 330px
     margin-left: 360px
     margin-bottom: 105px
+    @media screen and ( max-width: 1590px )
+      margin: 0 auto
+      margin-bottom: 65px
+    @media screen and ( max-width: 768px )
+      margin-bottom: 50px
+    @media screen and ( max-width: 520px )
+      margin-bottom: 30px
+    @media screen and ( max-width: 425px )
+      margin-bottom: 20px
+
+  &__caption
+    @media screen and ( max-width: 768px )
+      font-size: 76px
+      line-height: 113px
+    @media screen and ( max-width: 520px )
+      font-size: 56px
+      line-height: 93px
+    @media screen and ( max-width: 410px )
+      font-size: 46px
+      line-height: 83px
 
   &__subtitle
     right: -85px
+    @media screen and ( max-width: 768px )
+      font-size: 20px
+    @media screen and ( max-width: 520px )
+      font-size: 17px
+    @media screen and ( max-width: 410px )
+      right: -70px
+      font-size: 14px
 
   &__inner
     display: flex
     justify-content: space-between
+    align-items: center
+    @media screen and ( max-width: 1590px )
+      max-width: 1410px
+      width: 100%
+    @media screen and ( max-width: 1440px )
+      max-width: 1200px
+    @media screen and ( max-width: 1155px )
+      max-width: 995px
+    @media screen and ( max-width: 1024px )
+      max-width: 900px
+    @media screen and ( max-width: 930px )
+      flex-direction: column
 
   &__slider
     position: relative
+    @media screen and ( max-width: 930px )
+      margin-bottom: 15px
+    @media screen and ( max-width: 410px )
+      margin-bottom: 10px
 
   &__image
     width: 960px
     height: auto
+    @media screen and ( max-width: 1590px )
+      width: 830px
+    @media screen and ( max-width: 1440px )
+      width: 690px
+    @media screen and ( max-width: 1155px )
+      width: 550px
+    @media screen and ( max-width: 1024px )
+      width: 470px
+    @media screen and ( max-width: 520px )
+      width: 400px
+    @media screen and ( max-width: 410px )
+      width: 290px
 
   &__content
-    padding: 45px 0
+    max-width: 545px
     display: flex
     flex-direction: column
+    @media screen and ( max-width: 1440px )
+      max-width: 405px
 
   &__text
     max-width: 545px
     margin-bottom: 50px
     &:last-child
       margin-bottom: 0
+    @media screen and ( max-width: 1590px )
+      margin-bottom: 25px
+    @media screen and ( max-width: 1024px )
+      margin-bottom: 15px
+    @media screen and ( max-width: 768px )
+      font-size: 16px
+      line-height: 19px
+    @media screen and ( max-width: 410px )
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 17px
 
   &__heading
     margin: 0
     margin-bottom: 50px
     font-family: 'RobotoCondensed-Regular', sans-serif
     font-weight: 400
+    @media screen and ( max-width: 1590px )
+      margin-bottom: 25px
+    @media screen and ( max-width: 1024px )
+      margin-bottom: 15px
+    @media screen and ( max-width: 768px )
+      font-size: 16px
+      line-height: 19px
+    @media screen and ( max-width: 410px )
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 17px
+
+  &__list
+    @media screen and ( max-width: 1440px )
+      margin-bottom: 25px
+    @media screen and ( max-width: 1024px )
+      margin-bottom: 15px
+    @media screen and ( max-width: 410px )
+      margin-bottom: 10px
 
   &__item
+    @media screen and ( max-width: 768px )
+      font-size: 16px
+      line-height: 19px
+    @media screen and ( max-width: 410px )
+      font-size: 14px
+      line-height: 17px
 
   &__excerpt
     margin-bottom: 50px
+    @media screen and ( max-width: 1440px )
+      margin-bottom: 25px
+    @media screen and ( max-width: 1024px )
+      margin-bottom: 15px
+    @media screen and ( max-width: 768px )
+      font-size: 16px
+      line-height: 19px
+    @media screen and ( max-width: 410px )
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 17px
+
+  &__arrow-right
+    @media screen and ( max-width: 1440px )
+      width: 27px
+    @media screen and ( max-width: 520px )
+      width: 22px
+    @media screen and ( max-width: 425px )
+      width: 19px
+
+  &__arrow-left
+    @media screen and ( max-width: 1440px )
+      width: 27px
+    @media screen and ( max-width: 520px )
+      width: 22px
+    @media screen and ( max-width: 425px )
+      width: 19px
