@@ -10,12 +10,23 @@
 
   &__container
     margin-right: 0
+    @media screen and ( max-width: 1590px )
+      display: flex
+      justify-content: center
 
   &__wrap
     display: flex
     justify-content: space-between
+    @media screen and ( max-width: 1590px )
+      max-width: 1410px
+      width: 100%
     @media screen and ( max-width: 1350px )
+      max-width: 1200px
       align-items: center
+    @media screen and ( max-width: 1140px )
+      max-width: 995px
+    @media screen and ( max-width: 1024px )
+      max-width: 900px
     @media screen and ( max-width: 930px )
       flex-direction: column
 
