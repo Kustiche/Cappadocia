@@ -1,6 +1,12 @@
 .route
   padding-top: 100px
   padding-bottom: 100px
+  @media screen and ( max-width: 930px )
+    padding-top: 50px
+    padding-bottom: 50px
+  @media screen and ( max-width: 425px )
+    padding-top: 25px
+    padding-bottom: 25px
 
   &__container
     margin-right: 0
@@ -8,28 +14,90 @@
   &__wrap
     display: flex
     justify-content: space-between
+    @media screen and ( max-width: 1350px )
+      align-items: center
+    @media screen and ( max-width: 930px )
+      flex-direction: column
 
   &__content
     max-width: 280px
     display: flex
     flex-direction: column
     align-items: flex-start
+    @media screen and ( max-width: 930px )
+      margin-bottom: 20px
 
   &__title
     max-width: 330px
-    margin-bottom: 110px
+    margin-bottom: 105px
+    @media screen and ( max-width: 1350px )
+      margin-bottom: 65px
+    @media screen and ( max-width: 768px )
+      margin-bottom: 50px
+    @media screen and ( max-width: 500px )
+      margin-bottom: 30px
+    @media screen and ( max-width: 425px )
+      margin-bottom: 20px
+
+  &__caption
+    @media screen and ( max-width: 768px )
+      font-size: 76px
+      line-height: 113px
+    @media screen and ( max-width: 500px )
+      font-size: 56px
+      line-height: 93px
+    @media screen and ( max-width: 425px )
+      font-size: 46px
+      line-height: 83px
 
   &__subtitle
     right: -60px
+    @media screen and ( max-width: 768px )
+      font-size: 20px
+    @media screen and ( max-width: 500px )
+      font-size: 17px
+    @media screen and ( max-width: 425px )
+      font-size: 14px
 
   &__heading
     margin-bottom: 20px
+    @media screen and ( max-width: 768px )
+      font-size: 20px
+      line-height: 25px
+    @media screen and ( max-width: 425px )
+      font-size: 17px
+      line-height: 21px
+      margin-bottom: 10px
+
+  &__list
+    @media screen and ( max-width: 1350px )
+      margin-bottom: 25px
+    @media screen and ( max-width: 1140px )
+      margin-bottom: 15px
+    @media screen and ( max-width: 425px )
+      margin-bottom: 10px
 
   &__item
     font-family: 'RobotoCondensed-Light', sans-serif
     font-weight: 300
     font-size: 24px
     line-height: 28px
+    @media screen and ( max-width: 768px )
+      font-size: 20px
+      line-height: 25px
+    @media screen and ( max-width: 425px )
+      font-size: 17px
+      line-height: 21px
+
+  &__button
+    @media screen and ( max-width: 768px )
+      font-size: 20px
+      line-height: 25px
+      padding: 9px 39px
+    @media screen and ( max-width: 425px )
+      font-size: 17px
+      line-height: 21px
+      padding: 9px 29px
 
   &__slider
     position: relative
@@ -37,15 +105,31 @@
   &__image
     width: 960px
     height: auto
+    @media screen and ( max-width: 1350px )
+      width: 760px
+    @media screen and ( max-width: 1140px )
+      width: 640px
+    @media screen and ( max-width: 1024px )
+      width: 560px
+    @media screen and ( max-width: 695px )
+      width: 400px
+    @media screen and ( max-width: 500px )
+      width: 340px
+    @media screen and ( max-width: 375px )
+      width: 300px
 
   &__arrow-right
-    position: absolute
-    right: 2%
-    top: 50%
-    transform: translateY(-50%)
+    @media screen and ( max-width: 1350px )
+      width: 27px
+    @media screen and ( max-width: 500px )
+      width: 22px
+    @media screen and ( max-width: 425px )
+      width: 19px
 
   &__arrow-left
-    position: absolute
-    left: 2%
-    top: 50%
-    transform: translateY(-50%)
+    @media screen and ( max-width: 1440px )
+      width: 27px
+    @media screen and ( max-width: 500px )
+      width: 22px
+    @media screen and ( max-width: 425px )
+      width: 19px
