@@ -1,0 +1,122 @@
+.price
+  padding-top: 100px
+  padding-bottom: 100px
+  @media screen and ( max-width: 930px )
+    padding-top: 50px
+    padding-bottom: 50px
+  @media screen and ( max-width: 425px )
+    padding-top: 25px
+    padding-bottom: 25px
+
+  &__container
+    max-width: 1335px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    position: relative
+
+  &__image
+    position: absolute
+    right: 0
+    top: 9%
+
+  &__title
+    margin-bottom: 130px
+
+  &__caption
+
+  &__subtitle
+    right: -90px
+
+.top
+  display: flex
+  justify-content: space-between
+  margin-bottom: 200px
+
+  &__content
+    max-width: 530px
+    margin-right: 70px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &:last-child
+      margin-right: 0
+
+  &__heading
+    margin-bottom: 50px
+
+  &__text
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+
+.bottom
+  width: 100%
+  max-width: 1095px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  &__content
+    max-width: 385px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__title
+    &:nth-child(2)
+      margin-bottom: 80px
+
+  &__title--left
+    margin-right: auto
+
+  &__caption
+
+  &__subtitle--data
+    right: -65px
+
+  &__subtitle--money
+    right: -75px
+
+  &__heading
+    margin-bottom: 50px
+
+.form
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  &__name
+    width: 100%
+    margin-bottom: 20px
+    outline: none
+    border: 1px solid $anzac
+    padding: 15px 30px
+    padding-right: auto
+
+  &__number
+    width: 100%
+    margin-bottom: 20px
+    outline: none
+    border: 1px solid $anzac
+    padding: 15px 30px
+    padding-right: auto
+
+  &__button
+    text-transform: uppercase
+    padding: 10px 45px
+    border: 1px solid $anzac
+    background-color: $white
+    cursor: pointer
+    transition: all .4s
+    &:hover
+      background-color: $anzac
+      color: $white
+
+  &__image
+    width: 600px
+    height: auto
