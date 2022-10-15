@@ -1,0 +1,112 @@
+.footer
+  padding-top: 170px
+  padding-bottom: 745px
+  background-image: url(../img/footer/background.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+
+  &__container
+    max-width: 1080px
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__contant
+    padding: 70px 40px 190px 40px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+
+  &__image
+    position: absolute
+    top: 0
+    left: 0
+
+  &__headline
+    margin: 0
+    margin-bottom: 30px
+    font-family: 'Balqis', sans-serif
+    font-weight: 400
+    font-size: 86px
+    line-height: 115px
+    color: $anzac
+    z-index: 1
+
+  &__phone
+    width: 175px
+    margin-bottom: 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    text-decoration: none
+    color: $black
+    z-index: 1
+    &:hover .footer__number
+      &::after
+        width: 100%
+
+  &__number
+    position: relative
+    z-index: 1
+    &::after
+      content: ""
+      position: absolute
+      top: 100%
+      left: 50%
+      border-top: 2px solid $black
+      width: 0
+      transition: width .4s
+      transform: translateX(-50%)
+
+  &__email
+    margin-bottom: 35px
+    width: 250px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    text-decoration: none
+    color: $black
+    z-index: 1
+    &:hover .footer__mail
+      &::after
+        width: 100%
+
+  &__mail
+    position: relative
+    z-index: 1
+    &::after
+      content: ""
+      position: absolute
+      top: 100%
+      left: 50%
+      border-top: 2px solid $black
+      width: 0
+      transition: width .4s
+      transform: translateX(-50%)
+
+  &__icon
+    z-index: 1
+
+  &__title
+    font-family: 'Balqis', sans-serif
+    font-weight: 400
+    font-size: 86px
+    line-height: 115px
+    z-index: 1
+
+.icons
+  line-height: 0
+  z-index: 1
+
+  &__social-network
+    margin-right: 15px
+    text-decoration: none
+    &:last-child
+      margin-right: 0
+
+  &__image
+    width: 30px
+    height: auto
