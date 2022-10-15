@@ -60,6 +60,15 @@
 
   &__subtitle
     right: -90px
+    @media screen and ( max-width: 768px )
+      font-size: 20px
+      right: -80px
+    @media screen and ( max-width: 500px )
+      font-size: 17px
+      right: -73px
+    @media screen and ( max-width: 425px )
+      font-size: 14px
+      right: -60px
 
 .top
   display: flex
@@ -69,12 +78,11 @@
     margin-bottom: 100px
   @media screen and ( max-width: 930px )
     width: 100%
-  @media screen and ( max-width: 425px )
     margin-bottom: 50px
+  @media screen and ( max-width: 425px )
+    margin-bottom: 25px
     flex-direction: column
     align-items: center
-  @media screen and ( max-width: 320px )
-    margin-bottom: 25px
 
   &__content
     max-width: 530px
